@@ -122,5 +122,6 @@ module.exports = {
     'space-before-function-paren': 'off',
     'no-only-tests/no-only-tests': 'error',
     'space-in-parens': ['off', 'never'],
+    'detect-object-injection': 'off'
   },
 };
