@@ -122,6 +122,10 @@ module.exports = {
     'space-before-function-paren': 'off',
     'no-only-tests/no-only-tests': 'error',
     'space-in-parens': ['off', 'never'],
-    'detect-object-injection': 'off'
+    'detect-object-injection': 'off',
+    'import/no-extraneous-dependencies': [
+      'error',
+      { optionalDependencies: false, peerDependencies: false },
+    ]
   },
 };
