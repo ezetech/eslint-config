@@ -2,6 +2,12 @@
 
 Sharable eslint config
 
+Install the correct versions of each package, which are listed by the command:
+
+```
+npm info "@ezetech/eslint-config@latest" peerDependencies
+```
+
 More info: [ESLint sharable configuration](https://eslint.org/docs/developer-guide/shareable-configs)
 
 <b>To publish NPM package:</b>
