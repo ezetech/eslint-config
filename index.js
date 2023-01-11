@@ -20,7 +20,10 @@ module.exports = {
     'prettier/prettier': 'error',
     'operator-linebreak': ['error', 'after'],
     '@typescript-eslint/no-shadow': ['error'],
-    '@typescript-eslint/no-unused-vars': ['error'],
+    '@typescript-eslint/no-unused-vars': ['error', {
+      args: 'none',
+      ignoreRestSiblings: true
+    }],
     'import/order': [
       'error',
       {
