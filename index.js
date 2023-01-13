@@ -15,8 +15,10 @@ module.exports = {
     '@typescript-eslint/eslint-plugin',
     'import',
     'security',
+    'filenames-simple',
   ],
   rules: {
+    'filenames-simple/naming-convention': ['error', { rule: 'kebab-case' }],
     'prettier/prettier': 'error',
     'operator-linebreak': ['error', 'after'],
     '@typescript-eslint/no-shadow': ['error'],
