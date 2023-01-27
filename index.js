@@ -1,3 +1,5 @@
+const { mergeSpellCheckDictionary } = require('./mergeDictionary');
+
 module.exports = {
   extends: [
     'eslint:recommended',
@@ -16,16 +18,20 @@ module.exports = {
     'import',
     'security',
     'filenames-simple',
+    'spellcheck',
   ],
   rules: {
     'filenames-simple/naming-convention': ['error', { rule: 'kebab-case' }],
     'prettier/prettier': 'error',
     'operator-linebreak': ['error', 'after'],
     '@typescript-eslint/no-shadow': ['error'],
-    '@typescript-eslint/no-unused-vars': ['error', {
-      args: 'none',
-      ignoreRestSiblings: true
-    }],
+    '@typescript-eslint/no-unused-vars': [
+      'error',
+      {
+        args: 'none',
+        ignoreRestSiblings: true,
+      },
+    ],
     'import/order': [
       'error',
       {
@@ -127,6 +133,7 @@ module.exports = {
     'space-before-function-paren': 'off',
     'no-only-tests/no-only-tests': 'error',
     'space-in-parens': ['off', 'never'],
-    'detect-object-injection': 'off'
+    'detect-object-injection': 'off',
+    'spellcheck/spell-checker': mergeSpellCheckDictionary(),
   },
 };
