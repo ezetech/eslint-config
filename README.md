@@ -2,6 +2,12 @@
 
 Sharable eslint config
 
+Install the correct versions of each package, which are listed by the command:
+
+```
+npm info "@ezetech/eslint-config@latest" peerDependencies
+```
+
 More info: [ESLint sharable configuration](https://eslint.org/docs/developer-guide/shareable-configs)
 
 <b>To publish NPM package:</b>
@@ -15,12 +21,23 @@ git status --porcelain
 git checkout main
 git pull origin main
 ```
-- Update the version in package.json and package-lock.json files. Version `MUST` be greater than the previous one.
+- Update the version in package.json and package-lock.json files with next commands.
+For major version (^.0.0) use next command
+```
+npm version ---no-commit-hooks major
+```
+For minor version (0.^.0) use next command
+```
+npm version --no-commit-hooks minor
+```
+For patch version (0.0.^) use next command
+```
+npm version --no-commit-hooks patch
+```
 Commit and push changes.
 
-- Add a tag with a new version.
+- Push new tag version.
 ```
-git tag <new_version>
 git push origin <new_version>
 ```
 
