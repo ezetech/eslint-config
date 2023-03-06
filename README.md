@@ -2,6 +2,12 @@
 
 Sharable eslint config
 
+## development
+
+```ts
+  npm install
+```
+
 Install the correct versions of each package, which are listed by the command:
 
 ```
@@ -13,35 +19,47 @@ More info: [ESLint sharable configuration](https://eslint.org/docs/developer-gui
 <b>To publish NPM package:</b>
 
 - Make sure you have empty working status and the working directory is clean
+
 ```
 git status --porcelain
 ```
+
 - Pull the latest changes
+
 ```
 git checkout main
 git pull origin main
 ```
+
 - Update the version in package.json and package-lock.json files with next commands.
-For major version (^.0.0) use next command
+  For major version (^.0.0) use next command
+
 ```
 npm version ---no-commit-hooks major
 ```
+
 For minor version (0.^.0) use next command
+
 ```
 npm version --no-commit-hooks minor
 ```
+
 For patch version (0.0.^) use next command
+
 ```
 npm version --no-commit-hooks patch
 ```
+
 Commit and push changes.
 
 - Push new tag version.
+
 ```
 git push origin <new_version>
 ```
 
 - Publish a package
+
 ```
 npm publish --access public
 ```

@@ -3,7 +3,9 @@
   "version": "2.0.0",
   "description": "Sharable eslint config",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepare": "husky install",
+    "test": "npm run prettify",
+    "prettify": "pretty-quick --staged"
   },
   "main": "index.js",
   "exports": {
@@ -25,13 +27,18 @@
     "@typescript-eslint/parser": "^5.21.0",
     "eslint": "^8.14.0",
     "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-filenames-simple": "^0.8.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-no-null": "^1.0.2",
     "eslint-plugin-no-only-tests": "^2.6.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-security": "^1.5.0",
-    "eslint-plugin-filenames-simple": "^0.8.0",
     "eslint-plugin-spellcheck": "^0.0.20"
+  },
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "prettier": "^2.8.4",
+    "pretty-quick": "^3.1.3"
   }
 }
