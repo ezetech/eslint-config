@@ -135,5 +135,9 @@ module.exports = {
     'space-in-parens': ['off', 'never'],
     'security/detect-object-injection': 'off',
     'spellcheck/spell-checker': mergeSpellCheckDictionary(),
+    'import/no-extraneous-dependencies': [
+      'error',
+      { optionalDependencies: false, peerDependencies: false },
+    ],
   },
 };
