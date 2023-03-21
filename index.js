@@ -19,6 +19,7 @@ module.exports = {
     'security',
     'filenames-simple',
     'spellcheck',
+    'more',
   ],
   rules: {
     'filenames-simple/naming-convention': ['error', { rule: 'kebab-case' }],
@@ -139,5 +140,7 @@ module.exports = {
       'error',
       { optionalDependencies: false, peerDependencies: false },
     ],
+    'more/prefer-includes': 'error',
+    'more/no-then': 'error',
   },
 };
