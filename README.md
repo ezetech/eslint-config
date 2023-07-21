@@ -58,10 +58,20 @@ Commit and push changes.
 git push origin <new_version>
 ```
 
-- Publish a package
+- Publish a public package
 
 ```
 npm publish --access public
 ```
 
 Note: `npm publish` require authorization. For NPM access ask PM.
+
+- Publish a private package
+
+```
+npm publish --access restricted --@ezetech:registry=https://npm.pkg.github.com
+```
+
+Note: `npm publish` require Github token.
+
+**NOTICE: you NEED to publish both versions: public and private**
