@@ -1,8 +1,5 @@
 const restrictedImportsConfig = [
-  {
-    name: 'uuid',
-    use: 'Please use import { randomUUID } from `node:crypto` instead of the `uuid` package.',
-  },
+  { name: 'uuid', use: 'import { randomUUID } from `node:crypto`.' },
 ];
 
 // export all rules
