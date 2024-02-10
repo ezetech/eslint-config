@@ -10,7 +10,8 @@
   "main": "index.js",
   "exports": {
     ".": "./index.js",
-    "./mergeDictionary": "./mergeDictionary.js"
+    "./mergeDictionary": "./mergeDictionary.js",
+    "./restrictPackage": "./restrictPackage.js"
   },
   "repository": {
     "type": "git",
