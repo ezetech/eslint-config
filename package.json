@@ -36,8 +36,7 @@
     "eslint-plugin-no-only-tests": "^2.6.0",
     "eslint-plugin-prettier": "^5.0.1",
     "eslint-plugin-security": "^1.5.0",
-    "eslint-plugin-spellcheck": "^0.0.20",
-    "eslint-plugin-http-module-timeout": "file:eslint-plugin-http-module-timeout"
+    "eslint-plugin-spellcheck": "^0.0.20"
   },
   "devDependencies": {
     "husky": "^8.0.3",
