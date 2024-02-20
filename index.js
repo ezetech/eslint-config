@@ -142,5 +142,6 @@ module.exports = {
     ],
     'more/prefer-includes': 'error',
     'more/no-then': 'error',
+    'http-module-timeout/error': 'error',
   },
 };
