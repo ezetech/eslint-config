@@ -1,5 +1,4 @@
 const { mergeSpellCheckDictionary } = require('./mergeDictionary');
-const eslintPluginHttpModuleTimeout = require('./eslint-plugin-http-module-timeout');
 
 module.exports = {
   extends: [
@@ -21,7 +20,7 @@ module.exports = {
     'filenames-simple',
     'spellcheck',
     'more',
-    { 'eslint-plugin-http-module-timeout': eslintPluginHttpModuleTimeout },
+    'eslint-plugin-http-module-timeout',
   ],
   rules: {
     'filenames-simple/naming-convention': ['error', { rule: 'kebab-case' }],
@@ -144,6 +143,6 @@ module.exports = {
     ],
     'more/prefer-includes': 'error',
     'more/no-then': 'error',
-    'http-module-timeout/error': 'error',
+    'eslint-plugin-http-module-timeout/error': 'error',
   },
 };
