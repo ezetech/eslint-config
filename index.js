@@ -20,7 +20,6 @@ module.exports = {
     'filenames-simple',
     'spellcheck',
     'more',
-    'eslint-plugin-http-module-timeout',
   ],
   rules: {
     'filenames-simple/naming-convention': ['error', { rule: 'kebab-case' }],
@@ -143,6 +142,6 @@ module.exports = {
     ],
     'more/prefer-includes': 'error',
     'more/no-then': 'error',
-    'eslint-plugin-http-module-timeout/error': 'error',
+    'http-module-timeout': 'error',
   },
 };
