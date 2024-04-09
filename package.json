@@ -1,6 +1,6 @@
 {
   "name": "@ezetech/eslint-config",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "description": "Sharable eslint config",
   "scripts": {
     "prepare": "husky install",
@@ -28,7 +28,7 @@
     "@typescript-eslint/parser": "^6.9.1",
     "eslint": "^8.52.0",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-filenames-simple": "^0.8.0",
+    "eslint-plugin-filenames-simple": "^0.9.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-more": "^1.0.5",
