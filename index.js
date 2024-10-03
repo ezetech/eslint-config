@@ -145,6 +145,6 @@ module.exports = {
     'more/prefer-includes': 'error',
     'more/no-then': 'error',
     'http-module-timeout/error': 'error',
-    'n/no-sync': 'error',
+    'no-sync': 'error',
   },
 };
