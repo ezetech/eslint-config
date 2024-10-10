@@ -21,6 +21,7 @@ module.exports = {
     'spellcheck',
     'more',
     'http-module-timeout',
+    'n',
   ],
   rules: {
     'filenames-simple/naming-convention': ['error', { rule: 'kebab-case' }],
@@ -144,5 +145,7 @@ module.exports = {
     'more/prefer-includes': 'error',
     'more/no-then': 'error',
     'http-module-timeout/error': 'error',
+    'no-sync': 'error',
+    'n/prefer-node-protocol': 'error',
   },
 };
