@@ -146,5 +146,6 @@ module.exports = {
     'more/no-then': 'error',
     'http-module-timeout/error': 'error',
     'no-sync': 'error',
+    'n/prefer-node-protocol': 'error',
   },
 };
