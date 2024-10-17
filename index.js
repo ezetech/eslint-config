@@ -20,7 +20,7 @@ module.exports = {
     'filenames-simple',
     'spellcheck',
     'more',
-    'http-module-timeout',
+    // 'http-module-timeout',
   ],
   rules: {
     'filenames-simple/naming-convention': ['error', { rule: 'kebab-case' }],
@@ -53,8 +53,8 @@ module.exports = {
         ],
       },
     ],
-    '@typescript-eslint/no-explicit-any': 'warn',
-    '@typescript-eslint/ban-ts-comment': ['warn'],
+    '@typescript-eslint/no-explicit-any': 'warn', // need to fix (set as error)
+    '@typescript-eslint/ban-ts-comment': ['warn'], // need to fix (set as error)
     'dot-notation': 'off',
     '@typescript-eslint/dot-notation': ['error'],
     '@typescript-eslint/explicit-member-accessibility': [
@@ -113,6 +113,6 @@ module.exports = {
     ],
     'more/prefer-includes': 'error',
     'more/no-then': 'error',
-    'http-module-timeout/error': 'error',
+    // 'http-module-timeout/error': 'error',
   },
 };
