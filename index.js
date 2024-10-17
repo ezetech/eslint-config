@@ -29,7 +29,7 @@ module.exports = {
       'after',
       { overrides: { '?': 'before', ':': 'before' } },
     ],
-    'import/no-default-export': 'warn',
+    'import/no-default-export': 'warn', // need to fix (set as error)
     'no-shadow': 'off',
     '@typescript-eslint/no-shadow': ['error'],
     '@typescript-eslint/no-unused-vars': [
