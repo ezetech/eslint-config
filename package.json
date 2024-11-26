@@ -33,7 +33,6 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-more": "^1.0.5",
     "eslint-plugin-n": "^17.10.3",
-    "eslint-plugin-no-null": "^1.0.2",
     "eslint-plugin-no-only-tests": "^2.6.0",
     "eslint-plugin-prettier": "^5.0.1",
     "eslint-plugin-security": "^1.5.0",
