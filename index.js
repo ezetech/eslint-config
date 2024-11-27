@@ -8,7 +8,6 @@ module.exports = {
     'plugin:security/recommended',
   ],
   plugins: [
-    'eslint-plugin-no-null',
     'eslint-plugin-import',
     'eslint-plugin-react',
     'eslint-plugin-prettier',
