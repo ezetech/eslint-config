@@ -75,3 +75,21 @@ npm publish --access restricted --@ezetech:registry=https://npm.pkg.github.com
 Note: `npm publish` require Github token.
 
 **NOTICE: you NEED to publish both versions: public and private**
+
+## Potential problems
+
+Probably, you could face some problems similar to this during update eslint-config pacakge in other repos
+
+```
+Cannot set properties of null (setting 'peer')
+```
+ 
+Just delete old version and install new
+
+```
+npm uninstall @ezetech/eslint-config
+
+npm i @ezetech/eslint-config --save-dev
+```
+
+It is due to npm bug https://github.com/npm/cli/issues/6860
